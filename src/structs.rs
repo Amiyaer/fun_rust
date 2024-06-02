@@ -1,3 +1,4 @@
+#[derive(Debug)]
 struct User {
     active: bool,
     username: String,
@@ -28,6 +29,15 @@ pub fn struct_test(){
     // };
     user2.email = String::from("wuhaotian.xx@bxxxxxxxe.com");
 
-    println!("{}", user1.email);
-    println!("{}", user2.email);
+    // 打印结构体的方法
+    println!("{:?}", user1);
+    println!("{:#?}", user2);
+    dbg!(user1);
+}
+
+// 元组结构体
+struct Point(i32, i32, i32);
+
+fn tunp_struct() {
+    let origin = Point(0, 0, 0);
 }
