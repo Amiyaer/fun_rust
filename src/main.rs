@@ -1,6 +1,8 @@
 mod string;
 mod tunple;
 mod structs;
+mod matches;
+
 fn main() {
     println!("Hello, world!?dddd");
     let a = ["1","2","3","4"];
